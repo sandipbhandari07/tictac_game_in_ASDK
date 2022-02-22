@@ -76,7 +76,7 @@
             android:background="#333333"
             android:hint="PLAYER TWO"
             android:textAlignment="center"
-            android:textColor="#1C5581"
+            android:textColor="#2690E3"
             android:textColorHint="@color/white"
             android:textStyle="bold"
             />
