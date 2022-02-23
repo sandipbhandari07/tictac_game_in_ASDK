@@ -154,10 +154,23 @@ public class Ingame extends AppCompatActivity {
         boxpositions[selectedboxposition] = playerturn;
         if (playerturn == 1){
             imageView.setImageResource(R.drawable.x);
-            if ()
+            if (checkplayerwin()){
+
+            }
         }
     }
 
+    private boolean checkplayerwin(){
+        boolean response = false;
+        for (int i=0;i<combinationlist.size();i++){
+            final int[] combination = combinationlist.get(i);
+
+            if (boxpositions[combination[0]]== playerturn && boxpositions[combination[1]]==playerturn && boxpositions[combination[2]]== playerturn){
+                response = true;
+            }
+        }
+        return response;
+    }
 
 
     private boolean isBoxselectable(int boxPosition){
