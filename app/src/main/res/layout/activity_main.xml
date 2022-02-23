@@ -37,6 +37,8 @@
             android:src="@drawable/x"
             android:adjustViewBounds="true"/>
         <EditText
+            android:inputType="text"
+            android:maxLines="1"
             android:id="@+id/playerone"
             android:layout_width="match_parent"
             android:layout_height="50dp"
@@ -68,6 +70,8 @@
             android:src="@drawable/o"
             android:adjustViewBounds="true"/>
         <EditText
+            android:inputType="text"
+            android:maxLines="1"
             android:id="@+id/playertwo"
             android:layout_width="match_parent"
             android:layout_height="50dp"
@@ -90,7 +94,7 @@
         android:layout_marginTop="40dp"
         android:layout_marginEnd="20dp"
         android:background="@drawable/start_button"
-        android:text="START"
+        android:text="PLAY"
         android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold" />
