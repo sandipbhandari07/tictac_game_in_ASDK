@@ -37,6 +37,8 @@ public class windialog extends Dialog {
             @Override
             public void onClick(View view) {
 
+                ingame.restartMatch();
+                dismiss();
             }
         });
     }

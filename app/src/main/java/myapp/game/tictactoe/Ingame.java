@@ -229,4 +229,20 @@ public class Ingame extends AppCompatActivity {
         }
         return response;
     }
+    public void restartMatch(){
+        boxpositions = new int[]{0,0,0,0,0,0,0,0,0};
+
+        playerturn = 1;
+        totalselectedboxes = 1;
+        image1.setImageResource(R.drawable.trans_backg);
+        image2.setImageResource(R.drawable.trans_backg);
+        image3.setImageResource(R.drawable.trans_backg);
+        image4.setImageResource(R.drawable.trans_backg);
+        image5.setImageResource(R.drawable.trans_backg);
+        image6.setImageResource(R.drawable.trans_backg);
+        image7.setImageResource(R.drawable.trans_backg);
+        image8.setImageResource(R.drawable.trans_backg);
+        image9.setImageResource(R.drawable.trans_backg);
+
+    }
 }
