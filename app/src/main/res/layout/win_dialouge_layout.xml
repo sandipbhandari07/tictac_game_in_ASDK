@@ -10,6 +10,7 @@
         android:background="@color/black"
         >
         <TextView
+            android:id="@+id/messagetxt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -22,9 +23,13 @@
 
             />
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/startagainbtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
+            android:layout_margin="20dp"
+            android:background="@drawable/round_black_red_box"
+            android:textColor="@color/white"
+            android:text="START AGAIN"
             />
 
     </LinearLayout>

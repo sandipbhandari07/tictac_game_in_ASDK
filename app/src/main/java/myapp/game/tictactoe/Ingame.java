@@ -156,7 +156,56 @@ public class Ingame extends AppCompatActivity {
             imageView.setImageResource(R.drawable.x);
             if (checkplayerwin()){
 
+               windialog Windialog = new windialog(Ingame.this, playeronename.getText().toString()+"has won the match",Ingame.this);
+              Windialog.setCancelable(false);
+               Windialog.show();
             }
+            else if(totalselectedboxes == 9){
+                windialog Windialog = new windialog(Ingame.this, "It is draw!",Ingame.this);
+                Windialog.setCancelable(false);
+                Windialog.show();
+
+            }
+            else{
+                changeplayerturn(2);
+                totalselectedboxes++;
+
+            }
+        }
+        else{
+            imageView.setImageResource(R.drawable.o);
+
+            if (checkplayerwin()){
+                windialog Windialog = new windialog(Ingame.this, playertwoname.getText().toString()+"has won the match",Ingame.this);
+                Windialog.setCancelable(false);
+                Windialog.show();
+
+            }
+            else if(selectedboxposition == 9){
+                windialog Windialog = new windialog(Ingame.this, "It is draw!",Ingame.this);
+                Windialog.setCancelable(false);
+                Windialog.show();
+
+            }
+
+            else{
+                changeplayerturn(1);
+
+                totalselectedboxes++;
+            }
+        }
+    }
+
+    private void changeplayerturn(int currentplayerturn){
+        playerturn = currentplayerturn;
+        if (playerturn == 1){
+            playeronelayout.setBackgroundResource(R.drawable.round_black_blue_border);
+            playertwolayout.setBackgroundResource(R.drawable.round_black_border);
+        }
+        else {
+            playertwolayout.setBackgroundResource(R.drawable.round_black_blue_border);
+            playeronelayout.setBackgroundResource(R.drawable.round_black_border);
+
         }
     }
 

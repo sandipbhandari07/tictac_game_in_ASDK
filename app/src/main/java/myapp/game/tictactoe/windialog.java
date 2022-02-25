@@ -3,6 +3,9 @@ package myapp.game.tictactoe;
 import android.app.Dialog;
 import android.content.Context;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 
@@ -24,5 +27,17 @@ public class windialog extends Dialog {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.win_dialouge_layout);
+
+        final TextView messagetext = findViewById(R.id.messagetxt);
+        final Button startagain = findViewById(R.id.startagainbtn);
+
+        messagetext.setText(message);
+
+        startagain.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
     }
 }
