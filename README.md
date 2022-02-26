@@ -6,10 +6,10 @@ Tic-tac-toe is played on a three-by-three grid by two players, who alternately p
 3. If X wins then X win and If O wins then O win if not then its draw.
 
 Further deatils (logic) :
-consider a board 
+consider a board with the nine positions number as follows:
 1 2 3 
 4 5 6
-7 8 9
+7 8 9 (3*3)
 
 When X plays 1 as their opening move, then O should take 5. Then X takes 9 (in this situation, O should not take 3 or 7, O should take 2, 4, 6 or 8):
 
