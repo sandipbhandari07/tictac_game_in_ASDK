@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -32,6 +33,8 @@ public class Ingame extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_ingame);
 
         playeronename = findViewById(R.id.player_onename);
@@ -72,6 +75,7 @@ public class Ingame extends AppCompatActivity {
             public void onClick(View view) {
 
                 if (isBoxselectable(0)){
+                    performaction((ImageView)view,0 );
 
                 }
             }
@@ -80,6 +84,7 @@ public class Ingame extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (isBoxselectable(1)){
+                    performaction((ImageView)view,1 );
 
                 }
 
@@ -89,6 +94,7 @@ public class Ingame extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (isBoxselectable(2)){
+                    performaction((ImageView)view,2 );
 
                 }
 
@@ -100,6 +106,7 @@ public class Ingame extends AppCompatActivity {
 
                 if (isBoxselectable(3)){
 
+                    performaction((ImageView)view,3 );
                 }
             }
         });
@@ -108,6 +115,7 @@ public class Ingame extends AppCompatActivity {
             public void onClick(View view) {
 
                 if (isBoxselectable(4)){
+                    performaction((ImageView)view,4 );
 
                 }
             }
@@ -117,6 +125,7 @@ public class Ingame extends AppCompatActivity {
             public void onClick(View view) {
 
                 if (isBoxselectable(5)){
+                    performaction((ImageView)view,5 );
 
                 }
             }
@@ -126,7 +135,7 @@ public class Ingame extends AppCompatActivity {
             public void onClick(View view) {
 
                 if (isBoxselectable(6)){
-
+                    performaction((ImageView)view,6 );
                 }
             }
         });
@@ -135,7 +144,7 @@ public class Ingame extends AppCompatActivity {
             public void onClick(View view) {
 
                 if (isBoxselectable(7)){
-
+                    performaction((ImageView)view,7 );
                 }
             }
         });
@@ -145,6 +154,7 @@ public class Ingame extends AppCompatActivity {
 
                 if (isBoxselectable(8)){
 
+                    performaction((ImageView)view,8 );
                 }
             }
         });
@@ -156,7 +166,7 @@ public class Ingame extends AppCompatActivity {
             imageView.setImageResource(R.drawable.x);
             if (checkplayerwin()){
 
-               windialog Windialog = new windialog(Ingame.this, playeronename.getText().toString()+"has won the match",Ingame.this);
+               windialog Windialog = new windialog(Ingame.this, playeronename.getText().toString()+" has won the match",Ingame.this);
               Windialog.setCancelable(false);
                Windialog.show();
             }
