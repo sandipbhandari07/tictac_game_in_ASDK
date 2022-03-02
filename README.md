@@ -1,5 +1,10 @@
 Tic-tac-toe is played on a three-by-three grid by two players, who alternately place the marks X and O in one of the nine spaces in the grid.
 
+output: 
+
+<img src="x.png" width="100">  <img src="xo.png" width="100">  <img src="xoo.png" width="100">
+
+
 --- steps to play this game ---
 1. players can add their name accordingly.
 2. player X is always first to start.
@@ -54,6 +59,9 @@ X1 → O3 → X7 → O4 → X9, then X can take 5 or 8 to win.
 X1 → O9 → X3 → O2 → X7, then X can take 4 or 5 to win.
 X1 → O2 → X5 → O9 → X7, then X can take 3 or 4 to win.
 X1 → O6 → X5 → O9 → X3, then X can take 2 or 7 to win.
+
+
+
 
 
 
