@@ -1,5 +1,7 @@
 Tic-tac-toe is played on a three-by-three grid by two players, who alternately place the marks X and O in one of the nine spaces in the grid.
 
+app is in available at playstore -> https://play.google.com/store/apps/details?id=myapp.game.tictactoe
+
 output: 
 
 <img src="x.png" width="100">  <img src="xo.png" width="100">  <img src="xoo.png" width="100">
